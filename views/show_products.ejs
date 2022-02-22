@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><h3>name</h3></td>
+           
+            <td style="align-content: center; padding-left: 60px;"><h3 > Email</h3></td>
+            <td ><h3  style=" margin-left: 5%;" >Imge</h3></td>
+        </tr>
+        <% for( let i = 0; i < products.length; i++ ) { %>
+        <tr>
+           
+                
+          
+            <td> <%= products[i].name %></td>
+            <td> <%= products[i].Email %></td>
+            <td> <img style="width: 15%;height: 20; margin-left: 5%;" src="/imgs/<%=products[i].image %> "></td><br>
+                 
+           
+        </tr>
+         <% } %>
+    </table>
+    <br>
+
+    
+
+</body>
+</html>
